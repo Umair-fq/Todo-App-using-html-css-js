@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1 class="head">Todo App</h1>
+    <form action="" method="get" class="taskForm hidden">
+        <label for="title" class="taskTitle">Task Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter task title"><br><br>
+        <label for="description" class="description">Task Description</label>
+        <textarea rows="4" cols="50" name="txtDes" id="description" placeholder="Enter task description..."></textarea><br><br>
+        <label for="priority">Select priority:</label>
+        <select name="priority" id="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select><br><br>
+        <label for="date">Due Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+        <button type="submit" class="save">Save</button>
+    </form>
+    <br><br>
+    
+
+    <div class="container">
+        <button type="submit" class="addBtn">Add Task</button>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Sr. no</th>
+                    <th>Priority</th>
+                    <th>Task Title</th>
+                    <th>Task description</th>
+                    <th>Due date</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

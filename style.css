@@ -1,0 +1,152 @@
+  html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+  
+  .head {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .taskForm {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .taskForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .taskForm input[type="text"],
+  .taskForm textarea,
+  .taskForm select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .taskForm textarea {
+    resize: vertical;
+  }
+  
+  .taskForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 25px;
+    background: url('dropdown-arrow.png') no-repeat center right;
+    background-size: 20px;
+  }
+  
+  .taskForm input[type="date"] {
+    padding: 8px;
+  }
+  
+  .addBtn {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .addBtn:hover {
+    background-color: #45a049;
+  }
+  
+  #description::placeholder {
+    color: #888;
+    font-style: italic;
+  }
+  
+  .hidden{
+    display: none;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  table {
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+  }
+  
+  th {
+    text-align: left;
+  }
+  
+  thead {
+    th {
+      background-color: #55608f;
+    }
+  }
+  
+  tbody {
+    tr {
+      &:hover {
+        background-color: rgba(255,255,255,0.3);
+      }
+    }
+    td {
+      position: relative;
+      &:hover {
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -9999px;
+          bottom: -9999px;
+          background-color: rgba(255,255,255,0.2);
+          z-index: -1;
+        }
+      }
+    }
+  }
