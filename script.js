@@ -33,8 +33,24 @@ saveBtn.addEventListener("click", (event) => {
         alert("please fill all fields")
         isFieldsEmpty = true
     }
+
+    //getting the current date, so that task can not have a past date
+    let currentDate = new Date()
+    var dd = String(currentDate.getDate()).padStart(2, '0')
+    var mm = String(currentDate.getMonth() + 1).padStart(2, '0')
+    var yyyy = currentDate.getFullYear()
+
+    currentDate = yyyy + '-' + mm + '-' + dd
+
+    console.log("due date", dueDate.value, "current date: ", currentDate)
+
+    if(dueDate.value < currentDate){
+      alert("please select valid date")
+      isFieldsEmpty = true
+    }
   
     if (!isFieldsEmpty) {
+
       var rowCount = table.rows.length;
     // var cellCount = table.rows[0].cells.length;
       var row = table.insertRow(rowCount);
