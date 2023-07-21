@@ -8,6 +8,14 @@
 </head>
 <body>
     <h1 class="head">Todo App</h1>
+    <label for="searchPriority">Select Priority</label>
+    <select name="searchPriority" id="searchPriority" select>
+        <option value="">All</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+    </select>
+    <button class="searchBtn">Search</button>
     <form action="" method="get" class="taskForm hidden">
         <label for="title" class="taskTitle">Task Title</label>
         <input type="text" id="title" name="title" placeholder="Enter task title"><br><br>
